@@ -33,11 +33,11 @@ Note: Review what A/B testing is [here](https://www.optimizely.com/optimization-
 ### Installation
 1. Clone the repository:
     ```sh
-    git clone https://github.com/your-username/project2-vanguard-cx.git
+    git clone https://github.com/your-username/vanguard-ab-test.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd project2-vanguard-cx
+    cd vanguard-ab-test
     ```
 3. Install the required packages:
     ```sh
@@ -49,7 +49,7 @@ Note: Review what A/B testing is [here](https://www.optimizely.com/optimization-
     ```sh
     jupyter notebook
     ```
-2. Open the notebook file `analysis.ipynb` and run through the cells to see the analysis.
+2. Open the notebook file `main.ipynb` and run through the cells to see the analysis.
 
 ## Project Structure
 - `Data/`: Contains the dataset used for the analysis.
