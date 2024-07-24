@@ -22,7 +22,41 @@ The goal is to see if the new design leads to a better user experience and highe
 Note: Review what A/B testing is [here](https://www.optimizely.com/optimization-glossary/ab-testing/) if you are not already aware of how it works.
 
 ## Getting Started
+# Dataset Cleaning Project
 
+This repository contains the code and dataset used for cleaning a web log dataset. The dataset consists of web visit logs with several attributes related to user activity on a website.
+
+## Dataset
+
+The dataset is provided in the file `df_final_web_data_pt_1.txt` and  `df_final_web_data_pt_2.txt`. It contains the following columns:
+
+- `client_id`: An identifier for the client.
+- `visitor_id`: An identifier for the visitor.
+- `visit_id`: An identifier for the visit session.
+- `process_step`: The step in the process the user is in.
+- `date_time`: The date and time of the recorded step.
+
+### Sample Data
+
+| client_id | visitor_id          | visit_id                   | process_step | date_time           |
+|-----------|---------------------|----------------------------|--------------|---------------------|
+| 9988021   | 580560515_7732621733| 781255054_21935453173_531117 | step_3       | 2017-04-17 15:27:07 |
+| 9988021   | 580560515_7732621733| 781255054_21935453173_531117 | step_2       | 2017-04-17 15:26:51 |
+| 9988021   | 580560515_7732621733| 781255054_21935453173_531117 | step_3       | 2017-04-17 15:19:22 |
+| 9988021   | 580560515_7732621733| 781255054_21935453173_531117 | step_2       | 2017-04-17 15:19:13 |
+| 9988021   | 580560515_7732621733| 781255054_21935453173_531117 | step_3       | 2017-04-17 15:18:04 |
+
+## Data Cleaning Process
+
+The data cleaning process was performed in a Jupyter Notebook (`Dataset_pt_Cleaning.ipynb`) and involved the following steps:
+
+1. **Remove Duplicates**
+2. **Check for Missing Values**
+3. **Convert Data Types**
+4. **Normalize Data**
+5. **Analyze Categories in process_step**
+
+=======
 ### Prerequisites
 - Python 3.x
 - Jupyter Notebook
