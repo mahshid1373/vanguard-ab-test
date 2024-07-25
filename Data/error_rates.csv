@@ -1,0 +1,3 @@
+Variation,total_steps,error_steps,error_rate
+Control,23532,2272,0.0965493795682475
+Test,26968,2647,0.09815336695342629
