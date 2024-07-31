@@ -112,7 +112,7 @@ The data cleaning process was performed in a Jupyter Notebook (`Dataset_pt_Clean
 - **Figure 3:** Comparison of error rates between the control and test groups.
 ![Data Visualization](Figures/kpi_error_rate.png)
 
-==================================================================================================
+========================================================
 ### Prerequisites
 - Python 3.x
 - Jupyter Notebook
