@@ -108,7 +108,7 @@ The data cleaning process was performed in a Jupyter Notebook (`Dataset_pt_Clean
 - **Figure 1:** Distribution of clients across different process steps.
 ![Data Visualization](Figures/avg_time_diff.png)
 - **Figure 2:** Comparison of completion rates between the control and test groups.
-![Data Visualization](Figures/kpi_completion_rate.png)
+![Data Visualization](Figures/kpi_completeion_rate.png)
 - **Figure 3:** Comparison of error rates between the control and test groups.
 ![Data Visualization](Figures/kpi_error_rate.png)
 
@@ -144,6 +144,7 @@ The data cleaning process was performed in a Jupyter Notebook (`Dataset_pt_Clean
 ## Project Structure
 - `Data/`: Contains the dataset used for the analysis.
 - `Notebooks/`: Jupyter Notebooks with detailed analysis.
+- `Figures/`: Contains the figures.
 - `README.md`: Project documentation.
 
 ## Contributing
