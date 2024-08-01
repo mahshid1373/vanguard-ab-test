@@ -18,68 +18,68 @@ st.set_page_config(
 
 
 
-# Custom CSS to inject
-custom_css = """
-<style>
-    body {
-        color: black;
-        background-color: white;
-    }
-    .stApp {
-        background-color: white;
-    }
-    .sidebar .sidebar-content {
-        background-color: white;
-    }
-    .Widget>label {
-        color: black;
-    }
-    .stTextInput>div>div>input {
-        color: black;
-    }
-    .stSelectbox>div>div>select {
-        color: white;
-    }
-    .stMarkdown strong {
-    color: black !important;
-    }
-    .stMarkdown p {
-        color: black !important;
-    }
-    p, .stText {
-        color: white !important;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        color: black !important;
-    }
-    .stRadio > label {
-        color: white !important;
-    }
-    .stCheckbox > label {
-        color: white !important;
-    }
-    .stSlider > label {
-        color: white !important;
-    }
-    /* Make sidebar title white */
-    [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h1 {
-        color: white !important;
-    }
-    /* Ensure other sidebar text remains visible */
-    [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {
-        color: white;
-    }
-    [data-testid="stSidebar"] .stRadio label {
-        color: white !important;
-    }
-    [data-testid="stSidebar"] .stCheckbox label {
-        color: white !important;
-    }
-</style>
-"""
+# # Custom CSS to inject
+# custom_css = """
+# <style>
+#     body {
+#         color: black;
+#         background-color: white;
+#     }
+#     .stApp {
+#         background-color: white;
+#     }
+#     .sidebar .sidebar-content {
+#         background-color: white;
+#     }
+#     .Widget>label {
+#         color: black;
+#     }
+#     .stTextInput>div>div>input {
+#         color: black;
+#     }
+#     .stSelectbox>div>div>select {
+#         color: white;
+#     }
+#     .stMarkdown strong {
+#     color: black !important;
+#     }
+#     .stMarkdown p {
+#         color: black !important;
+#     }
+#     p, .stText {
+#         color: white !important;
+#     }
+#     h1, h2, h3, h4, h5, h6 {
+#         color: black !important;
+#     }
+#     .stRadio > label {
+#         color: white !important;
+#     }
+#     .stCheckbox > label {
+#         color: white !important;
+#     }
+#     .stSlider > label {
+#         color: white !important;
+#     }
+#     /* Make sidebar title white */
+#     [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] h1 {
+#         color: white !important;
+#     }
+#     /* Ensure other sidebar text remains visible */
+#     [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {
+#         color: white;
+#     }
+#     [data-testid="stSidebar"] .stRadio label {
+#         color: white !important;
+#     }
+#     [data-testid="stSidebar"] .stCheckbox label {
+#         color: white !important;
+#     }
+# </style>
+# """
 
-# Inject custom CSS
-st.markdown(custom_css, unsafe_allow_html=True)
+# # Inject custom CSS
+# st.markdown(custom_css, unsafe_allow_html=True)
 
 
 # Rest of your Streamlit app code follows...
