@@ -1,5 +1,25 @@
 # Project 2: Vanguard CX Digital Experiment Analysis
 
+## Table of Contents
+- [Project Brief](#project-brief)
+  - [Context](#context)
+  - [The Digital Challenge](#the-digital-challenge)
+  - [The Experiment Conducted](#the-experiment-conducted)
+  - [AB Testing](#ab-testing)
+- [Getting Started](#getting-started)
+  - [Datasets](#datasets)
+  - [Sample Data](#sample-data)
+  - [Data Cleaning Process](#data-cleaning-process)
+  - [Figures and Analysis](#figures-and-analysis)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+
 ## Project Brief
 
 ### Context
@@ -28,23 +48,50 @@ This repository contains the code and dataset used for cleaning a web log datase
 
 ## Dataset
 
-The dataset is provided in the file `df_final_web_data_pt_1.txt` and  `df_final_web_data_pt_2.txt`. It contains the following columns:
 
-- `client_id`: An identifier for the client.
-- `visitor_id`: An identifier for the visitor.
-- `visit_id`: An identifier for the visit session.
-- `process_step`: The step in the process the user is in.
-- `date_time`: The date and time of the recorded step.
+1. **Web Data**
+   - **Files:** `df_final_web_data_pt_1.txt` and `df_final_web_data_pt_2.txt`
+   - **Columns:**
+     - `client_id`: Unique identifier for each client.
+     - `visitor_id`: Unique identifier for each visitor session.
+     - `visit_id`: Unique identifier for each visit.
+     - `process_step`: The step of the process the client is currently on.
+     - `date_time`: Timestamp of when the process step occurred.
+
+2. **Demographic Data**
+   - **File:** `df_final_demo.txt`
+   - **Columns:**
+     - `client_id`: Unique identifier for each client.
+     - `age`: Age of the client.
+     - `gender`: Gender of the client.
+     - `income_level`: Income level of the client.
+
+3. **Experiment Clients Data**
+   - **File:** `df_final_experiment_clients.txt`
+   - **Columns:**
+     - `client_id`: Unique identifier for each client.
+     - `group`: Experimental group (control or test) to which the client belongs.
 
 ### Sample Data
 
-| client_id | visitor_id          | visit_id                   | process_step | date_time           |
-|-----------|---------------------|----------------------------|--------------|---------------------|
-| 9988021   | 580560515_7732621733| 781255054_21935453173_531117 | step_3       | 2017-04-17 15:27:07 |
-| 9988021   | 580560515_7732621733| 781255054_21935453173_531117 | step_2       | 2017-04-17 15:26:51 |
-| 9988021   | 580560515_7732621733| 781255054_21935453173_531117 | step_3       | 2017-04-17 15:19:22 |
-| 9988021   | 580560515_7732621733| 781255054_21935453173_531117 | step_2       | 2017-04-17 15:19:13 |
-| 9988021   | 580560515_7732621733| 781255054_21935453173_531117 | step_3       | 2017-04-17 15:18:04 |
+#### Web Data Sample
+| client_id | visitor_id | visit_id | process_step | date_time           |
+|-----------|-------------|----------|--------------|---------------------|
+| 9988021   | 580560515_7732621733 | 781255054_21935453173_531117 | step_3  | 2017-04-17 15:27:07 |
+| 9988021   | 580560515_7732621733 | 781255054_21935453173_531117 | step_2  | 2017-04-17 15:26:51 |
+
+#### Demographic Data Sample
+| client_id | age | gender | income_level |
+|-----------|-----|--------|--------------|
+| 9988021   | 34  | Female | High         |
+| 9988022   | 45  | Male   | Medium       |
+
+#### Experiment Clients Data Sample
+| client_id | group  |
+|-----------|--------|
+| 9988021   | test   |
+| 9988022   | control|
+
 
 ## Data Cleaning Process
 
@@ -56,7 +103,16 @@ The data cleaning process was performed in a Jupyter Notebook (`Dataset_pt_Clean
 4. **Normalize Data**
 5. **Analyze Categories in process_step**
 
-=======
+
+### Figures and Analysis
+- **Figure 1:** Distribution of clients across different process steps.
+![Data Visualization](Figures/avg_time_diff.png)
+- **Figure 2:** Comparison of completion rates between the control and test groups.
+![Data Visualization](Figures/kpi_completeion_rate.png)
+- **Figure 3:** Comparison of error rates between the control and test groups.
+![Data Visualization](Figures/kpi_error_rate.png)
+
+========================================================
 ### Prerequisites
 - Python 3.x
 - Jupyter Notebook
@@ -88,6 +144,7 @@ The data cleaning process was performed in a Jupyter Notebook (`Dataset_pt_Clean
 ## Project Structure
 - `Data/`: Contains the dataset used for the analysis.
 - `Notebooks/`: Jupyter Notebooks with detailed analysis.
+- `Figures/`: Contains the figures.
 - `README.md`: Project documentation.
 
 ## Contributing
@@ -107,7 +164,12 @@ The data cleaning process was performed in a Jupyter Notebook (`Dataset_pt_Clean
 5. Open a pull request.
 
 ## License
-This project is licensed under the Ironhack.
+This project is licensed under the [Ironhack](https://www.ironhack.com/de-en).
+
+## Related Links 
+- Project Presentation [Google Slides](https://docs.google.com/presentation/d/1D125JABvQOq5Ml4LJuE25bdqN9AF4WwXFIq7IBKqd6c/edit#slide=id.p1)
+- Tableau [Tableua](https://public.tableau.com/app/profile/faheem.khan3709/viz/Working_17224279398980/Dashboard1?publish=yes)
+- Streamlit [Streamlit]()
 
 ## Acknowledgments
 - Mahshid Khatami [linkedin](https://www.linkedin.com/in/mahshidkhatami-data-analyst)
