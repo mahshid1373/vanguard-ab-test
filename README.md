@@ -166,6 +166,11 @@ The data cleaning process was performed in a Jupyter Notebook (`Dataset_pt_Clean
 ## License
 This project is licensed under the [Ironhack](https://www.ironhack.com/de-en).
 
+## Related Links 
+- Project Presentation [Google Slides](https://docs.google.com/presentation/d/1D125JABvQOq5Ml4LJuE25bdqN9AF4WwXFIq7IBKqd6c/edit#slide=id.p1)
+- Tableau [Tableua](https://public.tableau.com/app/profile/faheem.khan3709/viz/Working_17224279398980/Dashboard1?publish=yes)
+- Streamlit [Streamlit]()
+
 ## Acknowledgments
 - Mahshid Khatami [linkedin](https://www.linkedin.com/in/mahshidkhatami-data-analyst)
 - Faheem Khan [linkedin](https://https://www.linkedin.com/in/faheem-j-khan-1b9ba19a/)
