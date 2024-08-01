@@ -112,6 +112,8 @@ The data cleaning process was performed in a Jupyter Notebook (`Dataset_pt_Clean
 ![Data Visualization](Figures/kpi_completeion_rate.png)
 - **Figure 3:** Comparison of error rates between the control and test groups.
 ![Data Visualization](Figures/kpi_error_rate.png)
+- **Figure 4:** Tableau Dashboard Fig.
+![Data Visualization](Figures/Tableau.png)
 
 ========================================================
 ### Prerequisites
