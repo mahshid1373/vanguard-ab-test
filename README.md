@@ -171,7 +171,7 @@ This project is licensed under the [Ironhack](https://www.ironhack.com/de-en).
 
 ## Related-Links 
 - Project Presentation [Google Slides](https://docs.google.com/presentation/d/1D125JABvQOq5Ml4LJuE25bdqN9AF4WwXFIq7IBKqd6c/edit#slide=id.p1)
-- Tableau [Tableua](https://public.tableau.com/app/profile/faheem.khan3709/viz/Working_17224279398980/Dashboard1?publish=yes)
+- Tableau [Tableau](https://public.tableau.com/app/profile/faheem.khan3709/viz/Working_17224279398980/Dashboard1?publish=yes)
 - Streamlit [Streamlit]()
 
 ## Acknowledgments
